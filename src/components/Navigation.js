@@ -1,17 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 let Navigation = function(props){
 return(
-    <div>
+    <Router>
 <h2>Navegacion</h2>
-
 <ul>
-<li>listas</li>
-<li>historial</li>
-<li>nuevo</li>
-<li>home</li>
-<li>salir</li>
+    <li><Link to="/home">Home</Link></li>
+    <li><Link to="/detail">Detail</Link></li>
+    <li><Link to="/">Gallery</Link></li>
+    <li><Link to="/">salir</Link></li>
 </ul>
-</div>
+</Router>
 )
 }
 export default Navigation

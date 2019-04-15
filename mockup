@@ -1,0 +1,14 @@
+App
+    Navigation (izq)
+    Content (der)
+        Menu
+            Search
+            Avatar
+        Home
+            Banner
+            Gallery (titulo, copete, flechas)
+                Item (imagen, titulo, descripcion, followers)
+        Detail
+            Top (imagen, titulo, descripcion, followers, like, play)
+            Playlist
+                Song (play, like, title, artist, album, length)

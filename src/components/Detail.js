@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import Gallery from './Gallery';
-import Banner from './Banner';
 import { Jumbotron, Container } from 'reactstrap';
 import Navigation from './Navigation';
 import BarraSup from './BarraSup';
 import {Col, Row} from 'reactstrap';
 
 
-class Home extends Component {
+class Detail extends Component {
         render(){
                 return(
                 <Container>
@@ -22,8 +20,9 @@ class Home extends Component {
                         </Col>
 
                     <Col>
-                        <Gallery/>
-                        <Banner/>
+                        <div>
+                            <h1>Detalles</h1>
+                        </div>
                     </Col>
                 </Row>
                 </Container>
@@ -31,5 +30,4 @@ class Home extends Component {
 );
 }
 }
-export default Home;
-
+export default Detail;
