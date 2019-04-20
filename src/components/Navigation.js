@@ -1,9 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import CurrentPLaylist from './CurrentPlaylist'
+
+
 
 let Navigation = function(props){
 return(
-    <Router>
+<Router>
 <h2>Navegacion</h2>
 <ul>
     <li><Link to="/home">Home</Link></li>
@@ -11,6 +14,12 @@ return(
     <li><Link to="/">Gallery</Link></li>
     <li><Link to="/">salir</Link></li>
 </ul>
+
+<br/>
+
+<CurrentPLaylist/>
+
+
 </Router>
 )
 }

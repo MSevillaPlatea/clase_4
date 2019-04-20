@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import { InputGroup, InputGroupText, InputGroupAddon, Input } from 'reactstrap';
+import { Navbar, Input } from 'reactstrap';
 
 
 class BarraSup extends Component {
@@ -9,6 +8,7 @@ return(
     <div id='navegacion'>
 <Navbar color="dark" expand='md'/>
 <Input placeholder='Search'/>
+
     </div>
 );
 }

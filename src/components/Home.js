@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Gallery from './Gallery';
 import Banner from './Banner';
-import { Jumbotron, Container } from 'reactstrap';
+import { Container } from 'reactstrap';
 import Navigation from './Navigation';
 import BarraSup from './BarraSup';
 import {Col, Row} from 'reactstrap';

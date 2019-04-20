@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
+import { Card, Button, CardImg, CardTitle, CardText,
     CardSubtitle, CardBody } from 'reactstrap';
-
+import { connect } from 'react-redux';
 
 
 class Item extends Component {
@@ -13,7 +13,7 @@ class Item extends Component {
   <CardTitle>{this.props.data.title}</CardTitle>
   <CardSubtitle>perro</CardSubtitle>
   <CardText>{this.props.data.texto}</CardText>
-  <Button>Button</Button>
+  <Button>{this.props.addtoplaylist}add to playlist</Button>
 </CardBody>
 </Card>
 
@@ -22,4 +22,13 @@ class Item extends Component {
 }
 
 }
-export default Item;
+
+
+let mapDispatchToProps = (dispatch,props) => {
+  return {
+    addtoplaylist: () =>{
+      dispatch({type:'ADD_TO_PLAYLIST',payload:this.props.data})
+  }
+  }
+}
+export default connect(null, mapDispatchToProps)(Item);
