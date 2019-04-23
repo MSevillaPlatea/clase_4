@@ -9,7 +9,7 @@ class CurrentPlaylist extends Component {
       <div>
         <h2>Songs</h2>
         <p>({this.props.songs.length} canciones)</p>
-        <p>duracion total :{totalLength}</p>
+        <p>duración total :{totalLength}</p>
         <ul className="list-group">
           {this.props.songs.map((song, i) => {
             return (
@@ -25,7 +25,7 @@ class CurrentPlaylist extends Component {
 }
 let mapStateToProps = state => {
   return {
-    songs: state.CurrentPlaylist
+    songs: state.items
   };
 };
 export default connect(

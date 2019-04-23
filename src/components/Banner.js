@@ -7,7 +7,7 @@ class Banner extends Component {
       <div id="banner">
         <Jumbotron fluid>
           <Container fluid>
-            <h1 className="display-3">Spotifact</h1>
+            <h1 className="display-3">SPOTIAPP</h1>
             <p className="lead">Banner</p>
             <img src="https://picsum.photos/700/150/?blur=1" alt="1" />
           </Container>

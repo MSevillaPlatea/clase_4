@@ -24,6 +24,7 @@ class Item extends Component {
           <CardTitle>{this.props.data.title}</CardTitle>
           <CardSubtitle>Descripción</CardSubtitle>
           <CardText>{this.props.data.texto}</CardText>
+          <CardText>{this.props.data.length}</CardText>
           <Button>{this.props.addtoplaylist}add to playlist</Button>
         </CardBody>
       </Card>
