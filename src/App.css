@@ -31,8 +31,3 @@
     transform: rotate(360deg);
   }
 }
-
-.flex{
-display: flex;
-flex-flow: column-wrap;
-}

@@ -1,26 +1,50 @@
-import React from 'react';
+import React, { Component } from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import CurrentPLaylist from './CurrentPlaylist'
+import CurrentPlaylist from "./CurrentPlaylist";
 
-
-
-let Navigation = function(props){
-return(
-<Router>
-<h2>Navegacion</h2>
-<ul>
-    <li><Link to="/home">Home</Link></li>
-    <li><Link to="/detail">Detail</Link></li>
-    <li><Link to="/">Gallery</Link></li>
-    <li><Link to="/">salir</Link></li>
-</ul>
-
-<br/>
-
-<CurrentPLaylist/>
-
-
-</Router>
-)
+class Navigation extends Component {
+  render() {
+    return (
+      <div>
+        <h2>Navegación</h2>
+        <ul>
+          <li>
+            <Link to="/Home">Home</Link>
+          </li>
+          <li>
+            <Link to="/Detail">Detail</Link>
+          </li>
+          <li>Gallery</li>
+          <li>salir</li>
+        </ul>
+        <CurrentPlaylist />
+      </div>
+    );
+  }
 }
-export default Navigation
+export default Navigation;
+
+//
+// ──────────────────────────────────────────────────────────────────────────── I ──────────
+//   :::::: H E C H O   C O M O   F U N C I O N : :  :   :    :     :        :          :
+// ──────────────────────────────────────────────────────────────────────────────────────
+//
+
+/* let Navigation = function(props) {
+  return (
+    <Router>
+      <h2>Navegación</h2>
+      <ul>
+        <li>
+          <Link to="/Home">Home</Link>
+        </li>
+        <li>
+          <Link to="/Detail">Detail</Link>
+        </li>
+        <li>Gallery</li>
+        <li>salir</li>
+      </ul>
+    </Router>
+  );
+};
+export default Navigation; */
