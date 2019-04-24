@@ -15,7 +15,7 @@ class Navigation extends Component {
             <Link to="/Detail">Detail</Link>
           </li>
           <li>Gallery</li>
-          <li>salir</li>
+          <li>Profile</li>
         </ul>
         <CurrentPlaylist />
       </div>

@@ -22,9 +22,10 @@ let store = createStore(function(state = initialState, action) {
   }
 
   if (action.type === "ADD_TO_PLAY_LIST") {
+    alert("hola");
     state = {
-      ...state,
-      currentPlaylist: state.currentPlaylist.concat(action.payload)
+      ...state
+      //currentPlaylist: state.currentPlaylist.concat(action.payload)
     };
   }
 
