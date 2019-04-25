@@ -27,9 +27,8 @@ class Item extends Component {
           <CardText>
             <p>duración: {this.props.data.length}</p>
           </CardText>
-          <Button onClick>
-            {this.props.data.mapDispatchToProps}add to playlist
-          </Button>
+          <Button onClick={addtoplaylist} />
+          {/*  <Button onClick>{addtoplaylist}add to playlist</Button> */}
         </CardBody>
       </Card>
     );
