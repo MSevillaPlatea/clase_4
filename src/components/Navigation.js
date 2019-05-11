@@ -14,6 +14,10 @@ class Navigation extends Component {
           <li>
             <Link to="/Detail">Detail</Link>
           </li>
+          <li>Browser</li>
+          <li>
+            <Link to="/Playlists">Mis PLaylists</Link>
+          </li>
           <li>Gallery</li>
           <li>Profile</li>
         </ul>

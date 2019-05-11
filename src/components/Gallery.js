@@ -6,10 +6,10 @@ import axios from "axios";
 
 class Gallery extends Component {
   componentWillMount() {
-    /*  fetch('http://localhost:3001/items')
-        .then(Response=> Response.json())
-        .then(data=> this.setState({items:data})) */
-    axios("http://localhost:3001/items").then(response => {
+    /* fetch("http://localhost:3001/items")
+      .then(Response => Response.json())
+      .then(data => this.setState({ items: data })); */
+    axios("http://localhost:3004/items").then(response => {
       this.props.fetchItems(response.data);
     });
   }
@@ -17,8 +17,6 @@ class Gallery extends Component {
   render() {
     return (
       <CardDeck>
-        {/* <h1>{this.props.appTitle}</h1> */}
-
         {this.props.items.map((item, i) => (
           <Item key={i} data={item} />
         ))}
