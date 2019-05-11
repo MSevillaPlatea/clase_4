@@ -5,6 +5,7 @@ import { Col, Row, Button } from "reactstrap";
 import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 import { getPlaylists } from "../requests";
+import { newPlaylist } from "../requests";
 
 class Playlists extends Component {
   constructor(props) {
@@ -24,6 +25,11 @@ class Playlists extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    newPlaylist(this.state.form.name).then(response => {
+      this.setState({
+        playlists: this.state.playlists.concat(response.data)
+      });
+    });
     console.log(this.state.form);
   };
 
