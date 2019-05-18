@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+.hass-error{
+  border: 2px solid red !important
+}
+
+.correcto{
+  border:2px solid green !important
+}
+
